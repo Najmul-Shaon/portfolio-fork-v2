@@ -1,7 +1,6 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
-import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaHackerrank } from "react-icons/fa";
@@ -11,7 +10,14 @@ import { RiContactsFill } from "react-icons/ri";
 function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
-      <Image
+      {/* <Image
+        src="/hero.svg"
+        alt="Hero"
+        width={1572}
+        height={795}
+        className="absolute -top-[98px] -z-10"
+      /> */}
+      <img
         src="/hero.svg"
         alt="Hero"
         width={1572}
